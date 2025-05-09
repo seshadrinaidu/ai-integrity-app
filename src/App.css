@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.light-theme {
+  background-color: #ffffff;
+  color: #000;
+}
+
+body.light-theme .header,
+body.light-theme .input-bar {
+  background-color: #e0e0e0;
+}
+
+body.light-theme .user-msg {
+  background-color: #c8d1ff;
+}
+
+body.light-theme .bot-msg {
+  background-color: #e0c8ff;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #282c34;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-container {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #121212;
+}
+
+.input-bar {
+  display: flex;
+  padding: 10px;
+  background-color: #282c34;
+  align-items: center;
+}
+
+.input-bar input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 8px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.input-bar input[type="file"] {
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-icon {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.message {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.user-msg {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot-msg {
+  background-color: #444;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.typing {
+  font-style: italic;
+  opacity: 0.7;
+}
